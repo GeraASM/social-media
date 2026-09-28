@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+:root {
+ 
+  --color-bg-body: hsl(0, 100%, 100%);
+  --color-bg-card: #F0F3FA;
+  --color-text-1: hsl(230, 17%, 14%);
+  --color-text-2: hsl(228, 12%, 44%);
+  --color-switch: #AEB2CB;
+
+  --color-card-hover: #E1E3F0;
+
+  --color-linear-gradient: linear-gradient(to right, hsl(210, 79%, 56%), hsl(146, 68%, 55%));
+  --color-green-500: hsl(163, 72%, 41%);
+  --color-red-500: hsl(356, 69%, 56%);
+  --color-blue-600: hsl(208, 92%, 53%);
+  --color-blue-500: hsl(203, 89%, 53%);
+  --color-red-700: hsl(348, 97%, 39%);
+}
+
+@theme inline {
+  --color-bg-body: var(--color-bg-body);
+  --color-bg-top-card: var(--color-bg-top-card);
+  --color-bg-card: var(--color-bg-card);
+  --color-text-1: var(--color-text-1);
+  --color-text-2: var(--color-text-2);
+  --color-switch: var(--color-switch);
+
+  --color-green-500: var(--color-green-500);
+  --color-red-500: var(--color-red-500);
+
+  --color-bg-card: var(--color-bg-card);
+}
+
+.dark {
+    --color-bg-body: hsl(230, 17%, 14%);
+    --color-bg-card: #252B43;
+    --color-text-1: #fff;
+    --color-text-2: hsl(230, 22%, 74%);
+}
+
+@layer components {
+  .instagram {
+    background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(5, 77%, 71%), hsl(329, 70%, 58%));
+  }
+  .youtube {
+    background-color: var(--color-red-500);
+  }
+  .twitter-facebook {
+    background-color: var(--color-blue-600);
+  }
+
+  .switch {
+    background-image: linear-gradient(to right, hsl(210, 79%, 56%), hsl(146, 68%, 55%));
+  }
+  .switch-hover:hover {
+    background-image: linear-gradient(to right, hsl(210, 79%, 56%), hsl(146, 68%, 55%));
+  }
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-body: hsl(230, 17%, 14%);
+    --color-bg-top-card: hsl(232, 19%, 15%);
+    --color-bg-card: hsl(228, 28%, 20%);
+    --color-text-1: #fff;
+    --color-text-2: hsl(230, 22%, 74%);
+  }
+} */
+
+
+body {
+   font-family: "Inter", sans-serif;
+   background-color: var(--color-bg-body);
+}
+

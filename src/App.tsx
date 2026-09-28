@@ -173,7 +173,7 @@ function App() {
             <h3 className='text-3xl text-text-2 font-bold mb-4'>Overview - Today</h3>
             <section className='grid gap-6 lg:grid-cols-4'>
               {
-                overview.map(({name, percentage, number, state, social, img}) => (
+                overview.map(({name, percentage, number, state, img}) => (
                   <div className='rounded-lg p-4 grid gap-4 bg-bg-card hover:bg-white/30 cursor-pointer'>
                     <div className='flex justify-between'>
                       <p className='font-bold text-text-1'>{name}</p>
